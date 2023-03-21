@@ -3,7 +3,7 @@ package ex1;
 import java.util.Scanner;
 
 public class Ex1Git {
-	public static String NumberToLetter(int d)
+	public static String NumberToLetter(int d) //function that Replace number to Letter
 	{
 		if(d==10)
 			return "A";
@@ -19,7 +19,7 @@ public class Ex1Git {
 			return "F";
 		return Integer.toString(d);
 	}
-	public static int LetterToNum(String d)
+	public static int LetterToNum(String d) //function that Replace Letter to number
 	{
 		if(d.compareTo("A")==0)
 			return 10 ;
@@ -36,7 +36,8 @@ public class Ex1Git {
 		return Integer.parseInt(d);
 		
 	}
-	public static double Dacimal (String s) {
+	public static double Dacimal (String s) //function that replace base 16 to base 10
+	{
 		int length= s.length()-1;
 		int x;
 		int i=0;
@@ -53,7 +54,7 @@ public class Ex1Git {
 	}
 
 
-	public static String Esroni(int Dig)
+	public static String Esroni(int Dig)//function that replace base 10 to base 16
 	{
 		int num1=0;
 		int num2=Dig;
@@ -75,13 +76,15 @@ public class Ex1Git {
 	}
 
 	public static void main(String[] args) {
+		
 		System.out.println("base colculatur: ");
 		System.out.println("1. 10->16");
 		System.out.println("2. 16->10");
 		System.out.println("3. Exit");
 		Scanner sc = new Scanner(System.in);
 		int dig = sc.nextInt();
-		while(dig!=3)
+		
+		while(dig!=3) //menu while run until EXit
 		{
 		if(dig==1)
 		{
